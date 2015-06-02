@@ -45,14 +45,14 @@ describe('Calculadora', function() {
 		});
 		
 		describe('Subtrair', function() {
-			it('Deveria retornar 0 quando for passado 2 e 0.', function() {
+			it('Deveria retornar 2 quando for passado 2 e 0.', function() {
 				var numero1 = 2;
 				var numero2 = 0;
 				
 				var resultado = controller.utils.calculos.subtrair(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(0);
+				resultado.should.be.equal(2);
 			});
 			it('Deveria retornar 1 quando for passado 4 e 3.', function() {
 				var numero1 = 4;
